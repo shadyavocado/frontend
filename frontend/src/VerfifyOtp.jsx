@@ -44,7 +44,7 @@ function VerifyOTP() {
       return;
     }
 
-    axios.post(`http://localhost:3000/user/verify-otp/${encodeURIComponent(email)}`, {
+    axios.post(`https://frontend-10oct.onrender.com/user/verify-otp/${encodeURIComponent(email)}`, {
       otp: otp
     })
       .then((response) => {
